@@ -1,6 +1,7 @@
 ## Welcome to HeatCrime
 
 Demo : https://moutellou.github.io/heatcrime
+
 Video :
 
 Is crime rate associated with higher temperature ?
