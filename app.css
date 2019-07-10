@@ -4,3 +4,8 @@ iframe {
     border-color: initial;
     border-image: initial;
 }
+
+.navbar-light .navbar-brand {
+    color: #666;
+    font-weight: 900;
+}
