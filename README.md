@@ -1,3 +1,3 @@
-## Welcome to WCrime
+## Welcome to HeatCrime
 
-Demo : https://moutellou.github.io/wcrime/
+Demo : https://moutellou.github.io/heatcrime
