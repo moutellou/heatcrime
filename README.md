@@ -2,7 +2,7 @@
 
 Demo : https://moutellou.github.io/heatcrime (user and password are provided in the submission document)
 
-Video : https://youtu.be/2WMTs-oaIq4
+Video : https://youtu.be/k9SNqhikcmw
 
 Is crime rate associated with higher temperature ?
 
