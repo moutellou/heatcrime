@@ -1,6 +1,6 @@
 ## Welcome to HeatCrime
 
-Demo : https://moutellou.github.io/heatcrime (user and password are provided in the submission document)
+Demo : https://moutellou.github.io/heatcrime (user and password in the submission document)
 
 Video : https://youtu.be/k9SNqhikcmw
 
