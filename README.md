@@ -1,3 +1,3 @@
 ## Welcome to HeatCrime
 
-Demo : https://moutellou.github.io/heatCrime
+Demo : https://moutellou.github.io/heatcrime
