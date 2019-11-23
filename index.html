@@ -52,6 +52,7 @@
                 url: "https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))",
                 contentType: "application/json",
                 crossDomain: true,
+                dataType: 'jsonp',
                 beforeSend: function(xhr, settings){
                     xhr.setRequestHeader("Authorization", "Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg=");},
                 success: function(data){
