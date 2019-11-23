@@ -5,7 +5,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="script-src 'self' https://vps267042.vps.ovh.ca/ 'unsafe-inline' 'unsafe-eval';" />
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -16,12 +15,6 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -45,25 +38,12 @@
 
 <!-- Page Content -->
 <div class="container">
-
-    <script>
-        $(document).ready(function(){
-            $.ajax({
-                type: "GET",
-                url: "https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))",
-                beforeSend: function(xhr){
-                    xhr.setRequestHeader('Authorization', 'Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg=');
-                    },
-                success: function(data){
-                    $("#output_iframe_id").attr('srcDoc',data)
-                }
-            });
-        });
-    </script>
-
-    <iframe id="output_iframe_id" src="about:blank" height="1300" width="1080"></iframe>
+    <iframe src="https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))" height="1300" width="1080"></iframe>
 </div>
 
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
