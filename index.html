@@ -49,10 +49,11 @@
         $(document).ready(function(){
             $.ajax({
                 type: "GET",
-                url: "https://vps267042.vps.ovh.ca/#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))",
-                beforeSend: function(xhr){
-                    xhr.setRequestHeader('Authorization', 'Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg=,');
-                    },
+                url: "https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))",
+                contentType: "application/json",
+                headers: {
+                    "Authorization": "Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg=,",
+                    'Access-Control-Allow-Origin':'*'},
                 success: function(data){
                     $("#output_iframe_id").attr('src',data)
                 }
@@ -60,7 +61,7 @@
         });
     </script>
 
-    <iframe id="output_iframe_id" src="about:blank" height="1300" width="1080"></iframe>
+    <iframe id="output_iframe_id"  src="about:blank" height="1300" width="1080"></iframe>
 </div>
 
 
