@@ -50,10 +50,10 @@
         $(document).ready(function(){
             $.ajax({
                 type: "GET",
+                headers: {
+                    "Authorization":"Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg="
+                },
                 url: "https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=()&_a=(description:'',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:15,i:'9200c6cf-f467-4927-83ed-40a4fce7ec18',w:24,x:0,y:0),id:'1a3a98c0-0e03-11ea-bcf7-71d10ed83fad',panelIndex:'9200c6cf-f467-4927-83ed-40a4fce7ec18',type:visualization,version:'7.4.2')),query:(language:kuery,query:''),timeRestore:!f,title:'Heat+Crime',viewMode:view)",
-                beforeSend: function(xhr){
-                    xhr.setRequestHeader('Authorization', 'Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg=');
-                    },
                 success: function(data){
                     $("#output_iframe_id").attr('srcDoc',data)
                 }
