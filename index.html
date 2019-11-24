@@ -50,7 +50,7 @@
         $(document).ready(function(){
             $.ajax({
                 type: "GET",
-                url: "http://localhost:5601/login?next=/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-5y,to:now))&_a=(description:'',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:15,i:'9200c6cf-f467-4927-83ed-40a4fce7ec18',w:24,x:0,y:0),id:'1a3a98c0-0e03-11ea-bcf7-71d10ed83fad',panelIndex:'9200c6cf-f467-4927-83ed-40a4fce7ec18',type:visualization,version:'7.4.2')),query:(language:kuery,query:''),timeRestore:!f,title:'Heat%20Crime',viewMode:view)",
+                url: "https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))",
                 beforeSend: function(xhr){
                     xhr.setRequestHeader('Authorization', 'Basic aGVhdGNyaW1lX3JlYWQ6MTIzNDU2Nzg=');
                     },
