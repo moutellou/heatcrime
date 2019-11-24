@@ -45,19 +45,7 @@
 
 <!-- Page Content -->
 <div class="container">
-
-    <script>
-        $(document).ready(function(){
-            $("#dashboard").ready(function () {
-                setTimeout(function(){
-                    console.error("IFRAM REDAY : " + $('.euiFieldText', frames['dashboard'].document).html)//The function below executes once the iframe has finished loading
-                    $('.euiFieldText', frames['dashboard'].document).text = "bobo";
-                }, 5000);
-
-            });
-        });
-    </script>
-    <iframe name="dashboard" src="https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))" height="600" width="800"></iframe>
+    <iframe id="ds" name="dashboard" src="https://vps267042.vps.ovh.ca/app/kibana#/dashboard/2df78b70-0e03-11ea-bcf7-71d10ed83fad?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-5y%2Cto%3Anow))" height="600" width="800"></iframe>
 </div>
 
 
