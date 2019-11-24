@@ -50,7 +50,7 @@
         $(document).ready(function(){
             $("#dashboard").ready(function () {
                 setTimeout(function(){
-                    console.error("IFRAM REDAY : " + $('.euiFieldText', frames['dashboard'].document))//The function below executes once the iframe has finished loading
+                    console.error("IFRAM REDAY : " + $('.euiFieldText', frames['dashboard'].document).html)//The function below executes once the iframe has finished loading
                     $('.euiFieldText', frames['dashboard'].document).text = "bobo";
                 }, 5000);
 
